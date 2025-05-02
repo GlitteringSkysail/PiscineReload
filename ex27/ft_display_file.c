@@ -21,31 +21,7 @@ void	error(char *str)
 		write(2, str++, 1);
 	}
 }
-/*void ft_putstr(char *str)
-{
-	int i = 0;
-	while (str[i])
-	{
-		write(2,&str[i],1);
-		i++;
-	}
-}
-*/
-/*int	check_errors(int argc)
-{
-	if (argc < 2)
-	{
-		error("File name missing.\n");
-		return (1);
-	}
-	if (argc > 2)
-	{
-		error("Too many arguments.\n");
-		return (1);
-	}
-	return (0);
-}
-*/
+
 int	read_and_display_file(int fd)
 {
 	char	buf[BUF_SIZE];
